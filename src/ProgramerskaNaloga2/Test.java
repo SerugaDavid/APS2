@@ -1,0 +1,140 @@
+package APS2.ProgramerskaNaloga2;
+
+public class Test {
+    public static void main(String[] args) {
+        // TEST 1
+        System.out.println("TEST1");
+        BST b = new BST();
+        b.insert(19);
+        b.insert(11);
+        b.insert(23);
+        b.insert(19);
+        b.insert(29);
+        System.out.println("Preorder --");
+        b.printPreorder();
+        System.out.println("Inorder --");
+        b.printInorder();
+        System.out.println("Postorder --");
+        b.printPostorder();
+
+//TEST 2
+        System.out.println();
+        System.out.println("TEST2");
+        BST b2 = new BST();
+        b2.insert(19);
+        System.out.println("Primerjave --");
+        b2.printNodeComparisons();
+        b2.insert(11);
+        b2.insert(23);
+        b2.insert(31);
+        b2.insert(42);
+        b2.insert(29);
+        System.out.println(b2.find(29));
+        b2.insert(23);
+        b2.insert(29);
+        b2.delete(31);
+        System.out.println(b2.find(31));
+        System.out.println(b2.find(23));
+        System.out.println("Inorder --");
+        b2.printInorder();
+        System.out.println("Primerjave --");
+        b2.printNodeComparisons();
+        System.out.println("TEST3");
+//TEST 3
+        System.out.println();
+        BST b3 = new BST();
+        b3.insert(19);
+        b3.insert(19);
+        b3.insert(19);
+        b3.insert(11);
+        b3.insert(9);
+        b3.insert(11);
+        System.out.println("Inorder --");
+        b3.printInorder();
+        b3.delete(23);
+        b3.insert(23);
+        b3.insert(17);
+        b3.insert(20);
+        b3.insert(18);
+        b3.insert(25);
+        System.out.println("Inorder --");
+        b3.printInorder();
+        b3.delete(19);
+        b3.delete(19);
+        b3.delete(11);
+        b3.delete(11);
+        b3.delete(23);
+        System.out.println(b3.find(19));
+        System.out.println("Preorder --");
+        b3.printPreorder();
+        System.out.println();
+        System.out.println("TEST4");
+//TEST 4
+        BST b4 = new BST();
+        b4.insert(19);
+        b4.insert(19);
+        System.out.println(b4.find(19));
+        b4.delete(19);
+        System.out.println(b4.find(19));
+        b4.delete(19);
+        System.out.println(b4.find(19));
+        b4.insert(19);
+        b4.insert(9);
+        b4.insert(23);
+        b4.insert(11);
+        b4.insert(21);
+        b4.insert(31);
+        b4.insert(11);
+        System.out.println("Postorder --");
+        b4.printPostorder();
+        b4.delete(19);
+        b4.delete(11);
+        System.out.println(b4.find(19));
+        System.out.println(b4.find(11));
+        b4.delete(11);
+        System.out.println("Postorder --");
+        b4.printPostorder();
+        System.out.println();
+        System.out.println("TEST5");
+//TEST 5
+        BST b5 = new BST();
+        b5.insert(29);
+        b5.insert(15);
+        b5.insert(43);
+        b5.insert(7);
+        b5.insert(23);
+        b5.insert(35);
+        b5.insert(51);
+        b5.delete(29);
+        System.out.println("Preorder --");
+        b5.printPreorder();
+        System.out.println("Primerjave --");
+        b5.printNodeComparisons();
+        System.out.println();
+        System.out.println("TEST6");
+        // TEST 6
+        BST b6 = new BST();
+        b6.insert(29);
+        b6.insert(15);
+        b6.insert(43);
+        b6.insert(5);
+        b6.insert(23);
+        b6.insert(35);
+        b6.insert(51);
+        b6.insert(3);
+        b6.insert(7);
+        b6.insert(19);
+        b6.insert(27);
+        b6.insert(31);
+        b6.insert(37);
+        b6.insert(47);
+        b6.insert(59);
+        b6.delete(15);
+        b6.delete(43);
+        System.out.println("Preorder --");
+        b6.printPreorder();
+        System.out.println("Postorder --");
+        b6.printPostorder();
+
+    }
+}
